@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('books_app.urls')),
     path("", include('reading_plans_app.urls')),
     path('api/', include('reviews_app.urls')),
+    path('api/', include('notifcations_app.urls')),
 ]
