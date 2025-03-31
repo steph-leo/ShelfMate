@@ -18,7 +18,7 @@ class Book(models.Model):
 
 
 class ReadingPlan(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name="reading_plans_books_app")
     start_date = models.DateField()
     end_date = models.DateField()
 

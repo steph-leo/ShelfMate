@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import ReadingPlan
+from .serializers import ReadingPlanSerializer
 
-# Create your views here.
+class ReadingPlanViewSet(viewsets.ModelViewSet):
+    queryset = ReadingPlan.objects.all()
+    serializer_class = ReadingPlanSerializer
