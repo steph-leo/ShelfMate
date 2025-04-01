@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Hello! This is SHeld Mate Welcome</h1>
+      <h1>Hello! This is SHelf Mate Welcome!</h1>
     </>
   )
 }
